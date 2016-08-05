@@ -57,10 +57,6 @@
             }
             else {
               echo "Wrong login or password";
-              $ip = $_SERVER['REMOTE_ADDR'];
-              $fo = fopen("ip.txt", "a");
-              $fw = fwrite($fo, $ip.";"."\n");
-              fclose($fo);
             }
         }
       ?>
