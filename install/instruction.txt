@@ -1,0 +1,2 @@
+Run install.sql trough phpmyadmin, SQL tab on server, not any table or database. 
+Second way is directly trough MySQL server
