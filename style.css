@@ -1,0 +1,33 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+  font-size: 33px;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+  font-size: 33px;
+}
+
+.logo {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.cell {
+  margin: 10px;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  font-size: 27px;
+}
