@@ -50,7 +50,7 @@
 
             $row = $check->fetch();
             if ($row['username'] == $usr) {
-              echo "uzytkownik istnieje";
+              echo "User already exists";
             }
             else {
               //Register:
