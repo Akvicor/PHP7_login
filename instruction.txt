@@ -1,0 +1,7 @@
+Run install.sql trough phpmyadmin, SQL tab on server, not any table or database.
+Second way is directly trough MySQL server
+Run locallly mail server, I used Mercury. It is based on locally sended emails, you can receive them with modded Thunderbird.
+Change values in php.ini:
+SMTP = localhost
+smtp_port = 25
+sendmail_from = postmaster@localhost
