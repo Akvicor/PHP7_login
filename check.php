@@ -8,6 +8,7 @@
   </head>
   <body>
     <?php
+      error_reporting(0);
       session_start();
       if (isset($_SESSION['username'])) {
         $usr = $_SESSION['username'];
@@ -16,6 +17,9 @@
       else {
         echo "To see it you have to <a href='index.php'>Login</a> or <a href='reg.php'>Register</a>";
       }
+      require 'connect.php';
+      $query =  dbConnect()->prepare("UPDATE users SET `key` = '' WHERE username = '$usr'");
+      $query->execute();
     ?>
   </body>
 </html>

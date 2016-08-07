@@ -19,6 +19,14 @@
         </tr>
         <tr>
           <td>
+            <b>E-mail:</b>
+          </td>
+          <td>
+            <input type="text" name="mail">
+          </td>
+        </tr>
+        <tr>
+          <td>
             <b>Password:</b>
           </td>
           <td>
@@ -38,6 +46,7 @@
 
             $usr = $_POST['username'];
             $pass = hash('sha256', $_POST['password']);
+            $mail = $_POST['mail'];
 
             //Check, if user exists:
 
@@ -54,7 +63,7 @@
             }
             else {
               //Register:
-              $query = dbConnect()->prepare("INSERT INTO `users`(`username`, `password`) VALUES ('$usr', '$pass')");
+              $query = dbConnect()->prepare("INSERT INTO `users`(`username`, `password`, `mail`) VALUES ('$usr', '$pass', '$mail')");
               $query->execute();
 
               $_SESSION['username'] = $usr;

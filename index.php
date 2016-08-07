@@ -57,6 +57,7 @@
             }
             else {
               echo "Wrong login or password";
+              echo " Forgot password? <a href='restore'>Get it back!</a>";
             }
         }
       ?>
